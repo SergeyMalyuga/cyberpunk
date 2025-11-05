@@ -1,1 +1,30 @@
-/* You can add global styles to this file, and also import other style files */
+@use './styles/fonts';
+@use './styles/variables' as variables;
+@use './assets/scss/functions' as *;
+
+html {
+  scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  font-family: variables.$font-family-primary;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 34px;
+  letter-spacing: 0;
+  text-align: left;
+  margin: 0;
+}
+
+.container {
+  max-width: 1320px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
