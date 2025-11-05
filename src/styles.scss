@@ -1,12 +1,18 @@
 @use './styles/fonts';
 @use './styles/variables' as variables;
 @use './assets/scss/functions' as *;
+@import '../node_modules/swiper/swiper-bundle.min.css';
+@import '../node_modules/swiper/swiper.css';
+@import '../node_modules/swiper/modules/navigation.css';
+@import '../node_modules/swiper/modules/autoplay.css';
 
 html {
   scroll-behavior: smooth;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -26,5 +32,15 @@ body {
   max-width: 1320px;
   width: 100%;
   margin: 0 auto;
-  padding: 20px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  border: 0;
 }
