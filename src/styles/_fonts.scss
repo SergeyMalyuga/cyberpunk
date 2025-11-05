@@ -1,0 +1,29 @@
+@font-face {
+  font-family: Archangelsk;
+  src: url('../assets/fonts/archangelsk.woff2') format('woff2'),
+  url('../assets/fonts/archangelsk.woff') format('woff'),
+  url('../assets/fonts/archangelsk.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url('../assets/fonts/roboto-regular.woff2') format('woff2'),
+  url('../assets/fonts/roboto-regular.woff') format('woff'),
+  url('../assets/fonts/roboto-regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url('../assets/fonts/roboto-bold.woff2') format('woff2'),
+  url('../assets/fonts/roboto-bold.woff') format('woff'),
+  url('../assets/fonts/roboto-bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
