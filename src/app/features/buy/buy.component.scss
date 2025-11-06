@@ -1,0 +1,58 @@
+@use '../../../styles/variables';
+
+.buy {
+background-color: variables.$black;
+
+  &__content {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 20px;
+  }
+
+  &__title {
+
+    &--content {
+      max-width: 624px;
+      width: 100%;
+      color: variables.$white;
+      font-family: variables.$font-family-secondary;
+      font-size: 62px;
+      font-weight: 400;
+      line-height: 100%;
+      letter-spacing: 0;
+      text-align: left;
+    }
+  }
+
+  &__wrapper {
+    &--image {
+      position: relative;
+      max-width: 944px;
+      width: 50%;
+
+      @media (width <= 1024px) {
+        max-width: 332px;
+      }
+
+      @media (width <= 768px) {
+        max-width: 320px;
+      }
+    }
+
+    &--content {
+      max-width: 640px;
+      width: 50%;
+      padding-left: 16px;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
