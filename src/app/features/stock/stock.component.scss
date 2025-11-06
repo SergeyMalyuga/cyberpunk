@@ -44,4 +44,135 @@
       background-size: cover;
     }
   }
+
+  &__text {
+    color: variables.$white;
+    font-weight: 400;
+    max-width: 952px;
+    width: 100%;
+    padding-bottom: 23px;
+    margin: 0 0 98px;
+
+    span {
+      color: variables.$aqua;
+    }
+
+    &--middle {
+      line-height: 21px;
+      text-decoration: underline;
+      text-underline-position: under;
+      text-underline-offset: 1px;
+      margin-bottom: 7px;
+
+    }
+
+    &--small {
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    max-width: 460px;
+    width: 100%;
+  }
+
+  &__input {
+    font-family: variables.$font-family-primary;
+    font-weight: 400;
+    max-width: 460px;
+    width: 100%;
+    background-color: transparent;
+    padding: 13px 0;
+    border: none;
+    border-bottom: 1px solid variables.$grey;
+    margin: 0 0 35px;
+
+
+    &::placeholder {
+      color: variables.$white;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 100%;
+      letter-spacing: 0;
+      text-align: left;
+    }
+
+    &--policy {
+      pointer-events: none;
+    }
+  }
+
+  &__label-file {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 460px;
+    width: 100%;
+    color: variables.$white;
+    border: 1px dashed variables.$grey;
+    padding: 38px 0;
+    margin: 0 0 35px;
+    cursor: pointer;
+  }
+
+  &__label--policy {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: variables.$white;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0;
+    text-align: left;
+    cursor: pointer;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 14px;
+      height: 14px;
+      border: 1px solid variables.$grey;
+    }
+  }
+
+  &__label--active::before {
+    background-image: url("../../../assets/images/vector/stock-check.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  &__submit {
+    font-family: variables.$font-family-primary;
+    font-weight: 700;
+    font-size: 18px;
+    max-width: 192px;
+    width: 100%;
+    background-color: variables.$yellow;
+    border: none;
+    padding: 19px 0;
+    text-align: center;
+    line-height: 21px;
+    margin: 0 0 15px;
+    cursor: pointer;
+  }
+
+  &__image-wrapper {
+    max-width: 788px;
+    width: 100%;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
 }
