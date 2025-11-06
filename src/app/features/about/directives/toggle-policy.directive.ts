@@ -1,7 +1,7 @@
 import {Directive, ElementRef, HostListener, inject} from '@angular/core';
 
 @Directive({
-  selector: '[appTogglePolicy]'
+  selector: '[appTogglePolicy]',
 })
 export class AppTogglePolicyDirective {
   private elementRef: ElementRef = inject(ElementRef);

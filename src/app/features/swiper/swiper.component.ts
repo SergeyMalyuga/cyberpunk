@@ -1,12 +1,6 @@
-import {
-  AfterViewInit,
-  ChangeDetectionStrategy,
-  Component,
-  ElementRef,
-  inject,
-} from '@angular/core';
+import {AfterViewInit, ChangeDetectionStrategy, Component, ElementRef, inject,} from '@angular/core';
 import Swiper from 'swiper';
-import { Autoplay, Pagination, Navigation, EffectFlip } from 'swiper/modules';
+import {Autoplay, EffectFlip, Navigation, Pagination} from 'swiper/modules';
 
 @Component({
   selector: 'app-swiper',

@@ -1,5 +1,5 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { SwiperComponent } from '../swiper/swiper.component';
+import {ChangeDetectionStrategy, Component} from '@angular/core';
+import {SwiperComponent} from '../swiper/swiper.component';
 
 @Component({
   selector: 'app-hero',

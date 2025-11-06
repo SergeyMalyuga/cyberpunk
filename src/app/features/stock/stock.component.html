@@ -1,27 +1,42 @@
 <section class="stock">
   <div class="stock__content container">
     <h2 class="stock__title">Играй и выигрывай!</h2>
-    <p class="stock__text">Играй в <span>Cyberpunk 2077</span> и получи возможность выиграть консоль
-      <span>Xbox Series X</span> или
-      <span>Sony PlayStation 5!</span> Заполни форму ниже и приложи скриншот о покупке игры. Итоги розыгрыша будут
-      подведены 1 февраля.
-      Удачи! ;)</p>
+    <p class="stock__text">
+      Играй в <span>Cyberpunk 2077</span> и получи возможность выиграть консоль
+      <span>Xbox Series X</span> или <span>Sony PlayStation 5!</span> Заполни форму ниже и приложи
+      скриншот о покупке игры. Итоги розыгрыша будут подведены 1 февраля. Удачи! ;)
+    </p>
     <div class="stock__wrapper">
       <form class="stock__form">
         <label for="name" class="stock__label visually-hidden">Имя</label>
-        <input id="name" class="stock__input" type="text" placeholder="Как тебя зовут?">
+        <input id="name" class="stock__input" type="text" placeholder="Как тебя зовут?" />
         <label for="email" class="stock__label visually-hidden">Email</label>
-        <input id="email" class="stock__input" type="text" placeholder="Твой e-mail">
-        <label class="stock__label-file">
-          <input class="stock__input stock__input--file visually-hidden" type="file">
+        <input id="email" class="stock__input" type="email" placeholder="Твой e-mail" />
+        <label class="stock__label-file" aria-describedby="file-help">
+          <input
+            class="stock__input stock__input--file visually-hidden"
+            accept=".png,.jpg,.jpeg,.pdf"
+            type="file"
+          />
           <span class="stock__text--middle">Прикрепить скриншот</span>
           <span class="stock__text--small">.png / .jpg / .pdf</span>
+          <span id="file-help" class="visually-hidden">
+            Максимальный размер файла 5MB. Разрешены форматы: PNG, JPG, PDF</span
+          >
         </label>
         <button class="stock__submit" type="submit">Отправить</button>
-        <label appTogglePolicy class="stock__label--policy"><input class="stock__input--policy visually-hidden" type="checkbox">Согласен на обработку персональных данных</label>
+        <label appTogglePolicy class="stock__label--policy"
+          ><input class="stock__input--policy visually-hidden" type="checkbox" />Согласен на
+          обработку персональных данных</label
+        >
       </form>
       <div class="stock__image-wrapper">
-        <img src="../../../assets/images/raster/stock-photo-1.png">
+        <img
+          src="../../../assets/images/raster/stock-photo-1.png"
+          alt="Призы конкурса: Xbox Series X и Sony PlayStation 5"
+          width="788"
+          height="456"
+        />
       </div>
     </div>
   </div>

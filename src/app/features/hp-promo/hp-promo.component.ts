@@ -1,10 +1,10 @@
 import {ChangeDetectionStrategy, Component} from '@angular/core';
 
 @Component({
-  selector: 'app-about',
+  selector: 'app-hp-promo',
   imports: [],
-  templateUrl: './about.component.html',
-  styleUrl: './about.component.scss',
+  templateUrl: './hp-promo.component.html',
+  styleUrl: './hp-promo.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class AboutComponent {}
+export class HpPromoComponent {}
