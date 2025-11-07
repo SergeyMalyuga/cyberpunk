@@ -4,7 +4,8 @@ import {HeroComponent} from '../../features/hero/hero.component';
 import {AboutComponent} from '../../features/about/about.component';
 import {StockComponent} from '../../features/stock/stock.component';
 import {HpPromoComponent} from '../../features/hp-promo/hp-promo.component';
-import { BuyComponent } from '../../features/buy/buy.component';
+import {BuyComponent} from '../../features/buy/buy.component';
+import {FooterComponent} from '../../features/footer/footer.component';
 
 @Component({
   selector: 'app-main',
@@ -15,6 +16,7 @@ import { BuyComponent } from '../../features/buy/buy.component';
     StockComponent,
     HpPromoComponent,
     BuyComponent,
+    FooterComponent,
   ],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss',

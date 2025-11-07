@@ -1,0 +1,49 @@
+@use '../../../styles/variables';
+
+.footer-main {
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 13px 20px;
+  }
+
+  &__column {
+    &--left,
+    &--right {
+      display: flex;
+      gap: 32px;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: variables.$black;
+    font-family: variables.$font-family-primary;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0;
+    text-align: left;
+
+    img {
+      display: block;
+    }
+  }
+
+  &__copyright {
+    background-color: variables.$black;
+    padding: 13px 0;
+
+    small {
+      display: block;
+      color: variables.$white;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 14px;
+      letter-spacing: 0;
+      text-align: center;
+      margin: 0;
+    }
+  }
+}

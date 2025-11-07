@@ -95,6 +95,7 @@
       line-height: 100%;
       letter-spacing: 0;
       text-align: left;
+      font-weight: 400;
 
       &:not(:last-child) {
         margin-bottom: 15px;
@@ -115,19 +116,19 @@
 
       &:nth-child(1) {
         &::before {
-          background-image: url("../../../assets/images/vector/buy-decorate-img-1.svg");
+          background-image: url('../../../assets/images/vector/buy-decorate-img-1.svg');
         }
       }
 
       &:nth-child(2) {
         &::before {
-          background-image: url("../../../assets/images/vector/buy-decorate-img-2.svg");
+          background-image: url('../../../assets/images/vector/buy-decorate-img-2.svg');
         }
       }
 
       &:nth-child(3) {
         &::before {
-          background-image: url("../../../assets/images/vector/buy-decorate-img-3.svg");
+          background-image: url('../../../assets/images/vector/buy-decorate-img-3.svg');
         }
       }
     }
