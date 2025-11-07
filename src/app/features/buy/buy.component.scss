@@ -1,7 +1,8 @@
 @use '../../../styles/variables';
 
 .buy {
-background-color: variables.$black;
+  background-color: variables.$black;
+  position: relative;
 
   &__content {
     display: flex;
@@ -10,7 +11,6 @@ background-color: variables.$black;
   }
 
   &__title {
-
     &--content {
       max-width: 624px;
       width: 100%;
@@ -21,28 +21,29 @@ background-color: variables.$black;
       line-height: 100%;
       letter-spacing: 0;
       text-align: left;
+      margin: 0 0 25px;
+    }
+
+    &--info {
+      color: variables.$aqua;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 100%;
+      letter-spacing: 0;
+      text-align: left;
+      margin: 0 0 15px;
     }
   }
 
   &__wrapper {
-    &--image {
-      position: relative;
-      max-width: 944px;
-      width: 50%;
-
-      @media (width <= 1024px) {
-        max-width: 332px;
-      }
-
-      @media (width <= 768px) {
-        max-width: 320px;
-      }
-    }
-
     &--content {
       max-width: 640px;
       width: 50%;
-      padding-left: 16px;
+      padding: 70px 70px 70px 16px;
+
+      @media (width <= 1024px) {
+        width: calc(100% - 32.5%);
+      }
     }
   }
 
@@ -51,8 +52,84 @@ background-color: variables.$black;
     display: block;
     top: 0;
     left: 0;
-    width: 100%;
-    height: auto;
+    max-width: 944px;
+    width: 50%;
+    height: 100%;
     object-fit: cover;
+
+    @media (width <= 1024px) {
+      max-width: 332px;
+      width: 32.5%;
+    }
+
+    @media (width <= 768px) {
+      max-width: 320px;
+    }
+  }
+
+  &__list {
+    &--kit {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    &--platform {
+      max-width: 320px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      gap: 46.56px 79px;
+      display: grid;
+      align-items: center;
+      grid-template-columns: 1fr 2fr;
+    }
+  }
+
+  &__item {
+    &--kit {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: variables.$white;
+      line-height: 100%;
+      letter-spacing: 0;
+      text-align: left;
+
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
+
+      &:last-child {
+        margin-bottom: 70px;
+      }
+
+      &::before {
+        content: '';
+        display: block;
+        width: 32px;
+        height: 32px;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      &:nth-child(1) {
+        &::before {
+          background-image: url("../../../assets/images/vector/buy-decorate-img-1.svg");
+        }
+      }
+
+      &:nth-child(2) {
+        &::before {
+          background-image: url("../../../assets/images/vector/buy-decorate-img-2.svg");
+        }
+      }
+
+      &:nth-child(3) {
+        &::before {
+          background-image: url("../../../assets/images/vector/buy-decorate-img-3.svg");
+        }
+      }
+    }
   }
 }

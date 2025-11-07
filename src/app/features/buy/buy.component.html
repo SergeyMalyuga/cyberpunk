@@ -1,16 +1,45 @@
 <section class="buy" aria-labelledby="title-main">
   <h2 id="title-main" class="buy__title--main visually-hidden">Купить игру</h2>
-  <div class="buy__wrapper--image">
-    <picture>
-      <source srcset="../../../assets/images/raster/buy-cover-mobile.jpg" media="(max-width: 768px)">
-      <source srcset="../../../assets/images/raster/buy-cover-table.jpg" media="(max-width: 1024px)">
-      <img class="buy__image" src="../../../assets/images/raster/buy-cover-default.jpg" width="944" height="717"
-           alt="Диски с игрой CyberPunk 2077">
-    </picture>
-  </div>
+  <picture>
+    <source srcset="../../../assets/images/raster/buy-cover-mobile.jpg" media="(max-width: 768px)">
+    <source srcset="../../../assets/images/raster/buy-cover-tablet.jpg" media="(max-width: 1024px)">
+    <img class="buy__image" src="../../../assets/images/raster/buy-cover-default.jpg" width="944" height="717"
+         alt="Диски с игрой CyberPunk 2077">
+  </picture>
   <div class="buy__content container">
     <div class="buy__wrapper--content">
       <h3 class="buy__title--content">Купить игру Cyberpunk 2077</h3>
+      <div class="buy__wrapper--info">
+        <h4 class="buy__title--info">В комплект входит:</h4>
+        <ul class="buy__list--kit">
+          <li class="buy__item--kit">
+            Футляр с игровыми дисками
+          </li>
+          <li class="buy__item--kit">
+            Футляр с кодом для загрузки игры и дисками (pc)
+          </li>
+          <li class="buy__item--kit">
+            Справочник с информацией об игровом мире
+          </li>
+        </ul>
+      </div>
+      <div class="buy__wrapper--platform">
+        <h4 class="buy__title--info">Выберите платформу:</h4>
+        <ul class="buy__list--platform">
+          <li class="buy__item--platform">
+            <img src="../../../assets/images/vector/buy-pc.svg" alt="PC">
+          </li>
+          <li class="buy__item--platform">
+            <img src="../../../assets/images/vector/buy-xbox.svg" alt="Xbox One">
+          </li>
+          <li class="buy__item--platform">
+            <img src="../../../assets/images/vector/buy-stadia.svg" alt="Stadia">
+          </li>
+          <li class="buy__item--platform">
+            <img src="../../../assets/images/vector/buy-ps4.svg" alt="Play Station 4">
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
