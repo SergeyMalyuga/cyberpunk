@@ -3,7 +3,7 @@
 
 .about {
   &__content {
-    padding: 70px 20px;
+    padding: 70px 36px;
   }
 
   &__title {
@@ -17,6 +17,10 @@
     margin: 0 0 25px;
     max-width: 996px;
     width: 100%;
+
+    @media (width <= 1024px) {
+      max-width: 620px;
+    }
   }
 
   &__text {
@@ -32,11 +36,19 @@
     span {
       color: variables.$aqua;
     }
+
+    @media (width <= 1024px) {
+      max-width: 788px;
+    }
   }
 
   &__wrapper {
     display: flex;
     gap: 32px;
+
+    @media (width <= 1024px) {
+      flex-direction: column;
+    }
   }
 
   &__img-wrapper {
@@ -53,6 +65,15 @@
   &__column {
     .about__img-wrapper:not(:last-child) {
       margin-bottom: 30px;
+    }
+
+    @media (width <= 1024px) {
+      display: flex;
+      gap: 32px;
+
+      .about__img-wrapper:not(:last-child) {
+        margin-bottom: 0;
+      }
     }
   }
 }

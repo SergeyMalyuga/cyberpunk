@@ -31,12 +31,16 @@
         >
       </form>
       <div class="stock__image-wrapper">
-        <img
-          src="../../../assets/images/raster/stock-photo-1.png"
-          alt="Призы конкурса: Xbox Series X и Sony PlayStation 5"
-          width="788"
-          height="456"
-        />
+        <picture>
+          <source srcset="../../../assets/images/raster/stock-photo-1.png" media="(max-width: 768px)">
+          <source srcset="../../../assets/images/raster/stock-photo-1x1024.png" media="(max-width: 1024px)">
+          <img
+            src="../../../assets/images/raster/stock-photo-1.png"
+            alt="Призы конкурса: Xbox Series X и Sony PlayStation 5"
+            width="788"
+            height="456"
+          />
+        </picture>
       </div>
     </div>
   </div>
