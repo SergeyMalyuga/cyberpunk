@@ -4,6 +4,10 @@
 .about {
   &__content {
     padding: 70px 36px;
+
+    @media (width <= 768px) {
+      padding: 70px clamp(0.75rem, -0.4105rem + 5.5427vw, 2.25rem);
+    }
   }
 
   &__title {
@@ -20,6 +24,10 @@
 
     @media (width <= 1024px) {
       max-width: 620px;
+    }
+
+    @media (width <= 768px) {
+      font-size: clamp(1.875rem, 0.3277rem + 7.3903vw, 3.875rem);
     }
   }
 
@@ -39,6 +47,10 @@
 
     @media (width <= 1024px) {
       max-width: 788px;
+    }
+
+    @media (width <= 768px) {
+      font-size: clamp(1rem, 0.9033rem + 0.4619vw, 1.125rem);
     }
   }
 
@@ -74,6 +86,10 @@
       .about__img-wrapper:not(:last-child) {
         margin-bottom: 0;
       }
+    }
+
+    @media (width <= 335px) {
+      flex-direction: column;
     }
   }
 }
