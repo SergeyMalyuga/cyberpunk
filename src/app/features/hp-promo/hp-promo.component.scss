@@ -15,6 +15,11 @@
   &__content {
     display: flex;
     padding: 70px 36px;
+
+    @media (width <= 768px) {
+      flex-direction: column;
+      padding: 70px clamp(0.75rem, -0.4105rem + 5.5427vw, 2.25rem);
+    }
   }
 
   &__column {
@@ -26,6 +31,10 @@
       @media (width <= 1024px) {
         max-width: 460px;
       }
+
+      @media (width <= 768px) {
+        margin: 0 auto;
+      }
     }
 
     &--right {
@@ -34,6 +43,10 @@
 
       @media (width <= 1024px) {
         max-width: 460px;
+      }
+
+      @media (width <= 768px) {
+        max-width: 681px;
       }
     }
   }
@@ -48,11 +61,22 @@
     letter-spacing: 0;
     text-align: left;
     margin: 0 0 25px;
+
+    @media (width <= 768px) {
+      max-width: 681px;
+      width: 100%;
+      font-size: clamp(1.875rem, 0.3277rem + 7.3903vw, 3.875rem);
+      line-height: 100%;
+    }
   }
 
   &__text {
     margin: 0 0 25px;
     line-height: 31.25px;
+
+    @media (width <= 768px) {
+      font-size: clamp(1rem, 0.9033rem + 0.4619vw, 1.125rem);
+    }
   }
 
   &__wrapper-image {
@@ -74,6 +98,19 @@
     @media (width <= 1024px) {
       flex-direction: column;
     }
+
+    @media (width <= 768px) {
+      flex-direction: row;
+    }
+
+    @media (width <= 335px) {
+      margin-bottom: 40px;
+
+      > img {
+        width: 44px;
+        height: 44px;
+      }
+    }
   }
 
   &__list {
@@ -89,6 +126,10 @@
     p {
       margin: 0;
       line-height: 32px;
+
+      @media (width <= 768px) {
+        font-size: clamp(1rem, 0.9033rem + 0.4619vw, 1.125rem);
+      }
     }
 
     &:not(:last-child) {
@@ -122,5 +163,37 @@
     font-weight: 700;
     text-align: center;
     padding: 19px 0;
+
+    @media (width <= 768px) {
+      font-size: clamp(1rem, 0.9033rem + 0.4619vw, 1.125rem);
+    }
+  }
+
+  &__link {
+    &--hp {
+      @media (width <= 768px) {
+        display: block;
+        width: clamp(2.75rem, 1.0092rem + 8.3141vw, 5rem);
+        height: clamp(2.75rem, 1.0092rem + 8.3141vw, 5rem);
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+
+    &--cyberpunk {
+      @media (width <= 768px) {
+        display: block;
+        width: clamp(10.9631rem, 3.9715rem + 33.3926vw, 20rem);
+        height: clamp(2.75rem, 1.0092rem + 8.3141vw, 5rem);
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
   }
 }

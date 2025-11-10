@@ -17,6 +17,10 @@
 
   &__content {
     padding: 15px 36px 70px;
+
+    @media (width <= 768px) {
+      padding: 70px clamp(0.75rem, -0.4105rem + 5.5427vw, 2.25rem);
+    }
   }
 
   &__title {
@@ -54,6 +58,7 @@
     @media (width <= 768px) {
       max-width: 681px;
       width: 100%;
+      font-size: clamp(1.875rem, 0.3277rem + 7.3903vw, 3.875rem);
     }
   }
 
@@ -75,6 +80,10 @@
       text-underline-position: under;
       text-underline-offset: 1px;
       margin-bottom: 7px;
+
+      @media (width <= 768px) {
+        font-size: clamp(1rem, 0.9033rem + 0.4619vw, 1.125rem);
+      }
     }
 
     &--small {
@@ -89,6 +98,8 @@
     @media (width <= 768px) {
       max-width: 681px;
       width: 100%;
+      font-size: clamp(1rem, 0.9033rem + 0.4619vw, 1.125rem);
+      margin-bottom: clamp(2.75rem, 0.1389rem + 12.4711vw, 6.125rem);
     }
   }
 
@@ -137,6 +148,10 @@
       line-height: 100%;
       letter-spacing: 0;
       text-align: left;
+
+      @media (width <= 768px) {
+        font-size: clamp(1rem, 0.9033rem + 0.4619vw, 1.125rem);
+      }
     }
 
     &--policy {
@@ -197,6 +212,10 @@
     line-height: 21px;
     margin: 0 0 15px;
     cursor: pointer;
+
+    @media (width <= 768px) {
+      font-size: clamp(1rem, 0.9033rem + 0.4619vw, 1.125rem);
+    }
   }
 
   &__image-wrapper {

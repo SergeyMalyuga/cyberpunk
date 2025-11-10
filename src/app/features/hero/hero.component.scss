@@ -4,6 +4,10 @@
 .hero {
   height: 1000px;
 
+  @media (width <= 768px) {
+    height: clamp(47.6875rem, 37.1071rem + 52.9018vw, 62.5rem);
+  }
+
   img {
     display: block;
   }
@@ -14,6 +18,16 @@
     align-items: end;
     height: 100%;
     padding: 20px 36px 0;
+
+    @media (width <= 768px) {
+      width: clamp(20rem, 6.4286rem + 67.8571vw, 39rem);
+      padding: 20px 0 0;
+    }
+
+    @media (width <= 335px) {
+      width: 320px;
+      justify-content: flex-start;
+    }
   }
 
   &__wrapper {
@@ -23,6 +37,11 @@
     background-position: center;
     padding: 71px 70px;
     z-index: 1000;
+
+    @media (width <= 768px) {
+      width: clamp(20rem, 6.4286rem + 67.8571vw, 39rem);
+      padding: clamp(0.625rem, -2.0536rem + 13.3929vw, 4.375rem);
+    }
   }
 
   &__title {
@@ -36,6 +55,14 @@
     max-width: 484px;
     width: 100%;
     text-align: left;
+
+    @media (width <= 768px) {
+      font-size: clamp(1.875rem, 0.4464rem + 7.1429vw, 3.875rem);
+    }
+
+    @media (width <= 435px) {
+      text-align: center;
+    }
   }
 
   &__button {
@@ -48,6 +75,12 @@
     letter-spacing: 0;
     text-align: center;
     padding: 19px 50px;
+
+    @media (width <= 768px) {
+      font-size: clamp(1.25rem, 1.0714rem + 0.8929vw, 1.5rem);
+      padding: clamp(0.625rem, 0.2232rem + 2.0089vw, 1.1875rem) 25px;
+      width: clamp(15.25rem, 14rem + 6.25vw, 17rem);
+    }
   }
 
   &__slider {
@@ -56,5 +89,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
+    @media (width <= 768px) {
+      height: clamp(47.6875rem, 37.1071rem + 52.9018vw, 62.5rem);
+    }
   }
 }
