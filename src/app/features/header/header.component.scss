@@ -16,6 +16,10 @@
     display: block;
     max-width: 296px;
     width: 100%;
+
+    @media (width <= 768px) {
+      max-width: 200px;
+    }
   }
 
   &__logo-image {
@@ -28,6 +32,12 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 36px;
+
+    @media (width <= 768px) {
+      flex-direction: column;
+      gap: 10px;
+      padding: clamp(0.75rem, -0.3214rem + 5.3571vw, 2.25rem);
+    }
   }
 
   &__list {
@@ -36,5 +46,22 @@
     padding: 0;
     display: flex;
     gap: 40px;
+
+    @media (width <= 768px) {
+      gap: clamp(1.75rem, 1.2143rem + 2.6786vw, 2.5rem);
+    }
+  }
+
+  &__nav-link {
+    @media (width <= 768px) {
+      display: block;
+      width: 25px;
+      height: 25px;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
   }
 }
